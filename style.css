@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap'); 
+/*  Inseri uma biblioteca de fonte do google */
 *{
-    margin: 0;
+    margin: 0; /* Zerei margem e padding padrão do navegador para não interferir no que eu queria implementar */
     padding: 0;
     text-decoration: none;
 }
@@ -39,7 +40,7 @@ body{
 }
 
 .header-list li {
-    list-style: none;
+    list-style: none; /* Removi os pontinhos padrão que decoram a lista */
     color: aliceblue;
     cursor: pointer;
     font-size: 19px;
@@ -140,7 +141,7 @@ title{
     position: fixed; 
     bottom: 20px; 
     right: 20px; 
-    z-index: 99; /* Fica sobre outros elementos */
+    z-index: 99; /* Fica sobre outros elementos. É relacionado ao Eixo Z do plano cartesiano, referencia a Altura */
     border: none; 
     outline: none; /* Remove borda de foco */
     background-color: #004239; 
@@ -149,14 +150,14 @@ title{
     padding: 15px; 
     border-radius: 10px; 
     font-size: 18px; 
-    transition: opacity 0.3s; 
+    transition: opacity 0.3s; /* Efeito de transição */
 }
 
-#voltaProTopo:hover {
+#voltaProTopo:hover { /* Troca a cor ao passar o mouse em cima */
     background-color: #01c248; 
 }
 
-/* Início do style da página Sobre mim*/
+/* Início do style da página Sobre mim */
 #pictureSobreMim{
     width: 65%;
     display: block;
@@ -164,7 +165,7 @@ title{
     margin-top: 5%;
     margin-bottom: 10%;
     border-radius: 40px;
-    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.3); /* Insere um efeito de sombra a imagem */
 }
 
 #tituloSobreMim{
@@ -172,7 +173,7 @@ title{
     margin-top: 50px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 1px; /* Inseri um espaçamento entre as letras para melhorar a legibilidade */
 }
 
 

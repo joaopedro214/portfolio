@@ -30,7 +30,7 @@
             </ul>
         </nav>
     </header>
-    /* construí alguns cards para inserir as informações*/
+    <!--construí alguns cards para inserir as informações-->
     <div class="tituloFormacao"><h2>Formação</h2></div>
     <div class="formacaoCards"> 
         <div class="cardsConteudo">
@@ -40,34 +40,12 @@
         </div>
     </div>
 
-    <script> // Funcionalidade do botão voltar até o topo
-        document.addEventListener("DOMContentLoaded", function() {
-            // Obter o botão
-            const voltarTopoBotao = document.getElementById("voltaProTopo");
-
-            // Mostrar o botão ao rolar 20px para baixo a partir do topo
-            window.onscroll = function() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    voltarTopoBotao.style.display = "block";
-                } else {
-                    voltarTopoBotao.style.display = "none";
-                }
-            };
-
-            // Quando o usuário clicar no botão, volta para o topo
-            voltarTopoBotao.onclick = function() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            };
-        });
-    </script>
+    <script src="./backToTop.js"> </script>
 
     <button id="voltaProTopo" title="Voltar ao topo">⬆</button>
 
     <footer>
-        <div class="midias-sociais">
+        <div class="midias-sociais"><!--Lins para as redes sociais-->
             <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-gonzatti-900154258/" target="_blank">
                 <img src="./assets/linkedin-brands-solid.svg">
             </a>

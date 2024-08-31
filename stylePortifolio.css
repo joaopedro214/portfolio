@@ -138,9 +138,9 @@ title{
     position: fixed; 
     bottom: 20px; 
     right: 20px; 
-    z-index: 99; /* Fica sobre outros elementos */
+    z-index: 99;
     border: none; 
-    outline: none; /* Remove borda de foco */
+    outline: none; 
     background-color: #004239; 
     color: white; 
     cursor: pointer; 
@@ -175,7 +175,7 @@ title{
     display: flex;
     flex-direction: column;          
     row-gap: 30px;
-    column-gap: 40px; /*column-gap:    > NA TRADUÇÃO SERIA A BRECHA OU INTERVALO DA COLUNA, OU SEJA, O ESPAÇAMENTO QUE*/
+    column-gap: 40px; 
     transition: transform 0.3s ease-in-out;
 } 
 
@@ -185,9 +185,9 @@ title{
     background-size: cover;
     background-color: #004239;
     background-position: 50% 50%;
-    border-radius: 10px; /*> RAIO DA BORDA, AO APLICAR PX ELE "COME PARTE DA BORDA" */
+    border-radius: 10px; 
     cursor: pointer;                 
-    transition: .1s; /*RESPONSÁVEL PELA ANIMAÇÃO DE TRANSIÇÃO. NESSE CASO ESTÁ COM UMA TRANSIÇÃO DE ESCALA ALI NO CARD:HOVER*/
+    transition: .1s; 
     display: flex;
     flex-direction: row;
     justify-content: center;

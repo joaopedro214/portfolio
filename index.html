@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
     <link rel="stylesheet" href="./style.css"/>
-    <link rel="icon" href="./assets/logo.png" type="image/png"/>
+    <link rel="icon" href="./assets/logo.png" type="image/png"/> <!--Ícone da tab-->
 </head>
 <body>
 
     <header>
         <a href="./index.html">
-            <img style="object-fit: contain;" id="logo" src="./assets/logo.png">
+            <img style="object-fit: contain;" id="logo" src="./assets/logo.png"> <!--Logo do site, que redireciona para a página inicial-->
         </a>
         <nav class="header-navigation">
             <ul class="header-list">
@@ -34,29 +34,8 @@
     <h2 id="tituloSobreMim">Sobre mim</h2>
     <img style="object-fit: contain;" id="pictureSobreMim" src="./assets/sobreMim.png">
     
-    <script> // Funcionalidade do botão voltar até o topo
-        document.addEventListener("DOMContentLoaded", function() {
-            // Obter o botão
-            const voltarTopoBotao = document.getElementById("voltaProTopo");
-
-            // Mostrar o botão ao rolar 20px para baixo a partir do topo
-            window.onscroll = function() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    voltarTopoBotao.style.display = "block";
-                } else {
-                    voltarTopoBotao.style.display = "none";
-                }
-            };
-
-            // Quando o usuário clicar no botão, volta para o topo
-            voltarTopoBotao.onclick = function() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            };
-        });
-    </script>
+    <script src="./backToTop.js"> </script> <!--Funcionalidade do botão voltar até o topo-->   
+    
 
     <button id="voltaProTopo" title="Voltar ao topo">⬆</button>
 

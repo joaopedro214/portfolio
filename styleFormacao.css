@@ -176,9 +176,9 @@ title{
 .cardsConteudo {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);          
+    grid-template-columns: repeat(3,1fr); /* Cria três colunas de igual tamanho */          
     row-gap: 20px;
-    column-gap: 40px; /*column-gap:    > NA TRADUÇÃO SERIA A BRECHA OU INTERVALO DA COLUNA, OU SEJA, O ESPAÇAMENTO QUE*/
+    column-gap: 40px; /* Insere um espaçamento entra as colunas */
     transition: transform 0.3s ease-in-out;
 } 
 
@@ -188,9 +188,9 @@ title{
     background-size: cover;
     background-color: #004239;
     background-position: 50% 50%;
-    border-radius: 10px; /*> RAIO DA BORDA, AO APLICAR PX ELE "COME PARTE DA BORDA" */
+    border-radius: 10px; /*> Deixa a borda arrendada */
     cursor: pointer;                 
-    transition: .1s; /*RESPONSÁVEL PELA ANIMAÇÃO DE TRANSIÇÃO. NESSE CASO ESTÁ COM UMA TRANSIÇÃO DE ESCALA ALI NO CARD:HOVER*/
+    transition: .1s; /* Responsável pela animação de transição */
     display: flex;
     flex-direction: row;
     justify-content: center;
