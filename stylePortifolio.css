@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004239;
+}
+
+body{
+    background-color: #006354;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-list{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.header-list li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    justify-content: space-between;
+    margin-inline: 35px;
+    letter-spacing: 1px;
+}
+
+.header-list li:hover{
+    color: #01c248;
+    transform: scale(0.95);
+}
+
+#logo{
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004239;
+}
+
+.footer-navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #fff;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    list-style: none;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.footer-list li:hover{
+    color: #01c248;
+    transform: scale(0.95);
+}
+
+.midias-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.midias-sociais img{
+    width: 40px;
+    height: 100%;   
+}
+
+#frasesFooter1{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+#frasesFooter2{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+title{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#backToTop {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; /* Fica sobre outros elementos */
+    border: none; 
+    outline: none; /* Remove borda de foco */
+    background-color: #004239; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    transition: opacity 0.3s; 
+}
+
+#backToTop:hover {
+    background-color: #01c248; 
+}
+
+
+
+/* Início do style da página Portifólio*/
+.titulo-portifolio{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    letter-spacing: 1px;
+}
+
+.box-portifolio {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.box-conteudo {
+    display: flex;
+    flex-direction: column;          
+    row-gap: 30px;
+    column-gap: 40px; /*column-gap:    > NA TRADUÇÃO SERIA A BRECHA OU INTERVALO DA COLUNA, OU SEJA, O ESPAÇAMENTO QUE*/
+    transition: transform 0.3s ease-in-out;
+} 
+
+.box {
+    width: auto;
+    height: 600px;
+    background-size: cover;
+    background-color: #004239;
+    background-position: 50% 50%;
+    border-radius: 10px; /*> RAIO DA BORDA, AO APLICAR PX ELE "COME PARTE DA BORDA" */
+    cursor: pointer;                 
+    transition: .1s; /*RESPONSÁVEL PELA ANIMAÇÃO DE TRANSIÇÃO. NESSE CASO ESTÁ COM UMA TRANSIÇÃO DE ESCALA ALI NO CARD:HOVER*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px 10px; 
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding-left: 65px;
+    padding-right: 65px;
+    text-align: center;
+    box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    margin: 0 50px 0 50px;
+}
+
+.banner p{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.banner a{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.banner a:hover{
+    color: #21d1ba;
+}
+
+.banner img{
+    width: 950px;
+    height: 450px;
+    border-radius: 10px;
+}

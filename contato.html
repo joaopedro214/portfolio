@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./styleContato.css"/>
+    <link rel="icon" href="./assets/logo.png" type="image/png"/>
+</head>
+<body>
+
+    <header>
+        <a href="./index.html">
+            <img style="object-fit: contain;" id="logo" src="./assets/logo.png">
+        </a>
+        <nav class="header-navigation">
+            <ul class="header-list">
+                <a href="./index.html">
+                    <li>Sobre mim</li>
+                </a>
+                <a href="./formacao.html">
+                    <li>Formação</li>
+                </a>
+                <a href="./portifolio.html">
+                    <li>Portifólio</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    
+    <form id="form-contato">
+        <h2>Entre em contato comigo</h2><br><br>
+        
+        <label for="nome">Nome</label>  
+        <input type="text" id="nome" class="form-control" placeholder="Nome" required/><br>
+    
+    
+        <label for="email">E-mail</label>
+        <input type="email" id="email" class="form-control" placeholder="E-mail" required/><br>
+        
+    
+        <label for="celular">Celular</label>
+        <input type="text" id="celular" class="form-control" placeholder="Celular" required/><br>
+        
+    
+        <label for="mensagem">Mensagem</label>
+        <textarea type="text" id="mensagem" class="form-control" rows="06" cols="80" placeholder="Escreva sua mensagem..." required></textarea><br>
+          
+        <button class="button" id="button" value="enviar">Enviar</button><br><br><br>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obter o botão
+            const backToTopButton = document.getElementById("backToTop");
+    
+            // Mostrar o botão ao rolar 20px para baixo a partir do topo
+            window.onscroll = function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            };
+    
+            // Quando o usuário clicar no botão, rolar suavemente para o topo
+            backToTopButton.onclick = function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            };
+        });
+    </script>
+    
+    
+    <button id="backToTop" title="Voltar ao topo">⬆</button>
+
+    <footer>
+        <div class="midias-sociais">
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-gonzatti-900154258/">
+                <img src="./assets/linkedin-brands-solid.svg"> 
+            </a>
+            <a href="https://github.com/joaopedro214">
+                <img src="./assets/github-brands-solid.svg">
+            </a>  
+            <a href="https://www.instagram.com/jpgonzatti/">
+                <img src="./assets/square-instagram-brands-solid.svg">
+            </a>
+        </div>  
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="./index.html">
+                    <li>Sobre mim</li>
+                </a>
+                <a href="./formacao.html">
+                    <li>Formação</li>
+                </a>
+                <a href="./portifolio.html">
+                    <li>Portifólio</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </nav>
+        <p id="frasesFooter1">Todos os direitos reservados ®</p>
+        <p id="frasesFooter2">Desenvolvido por João P. D. Gonzatti</p>
+    </footer>
+</body>
+</html>
