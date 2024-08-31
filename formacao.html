@@ -30,9 +30,9 @@
             </ul>
         </nav>
     </header>
-    
+    /* construí alguns cards para inserir as informações*/
     <div class="tituloFormacao"><h2>Formação</h2></div>
-    <div class="formacaoCards">
+    <div class="formacaoCards"> 
         <div class="cardsConteudo">
             <div class="card banner-1">Ensino Médio.<br><br>Finalizei em 2018.</div>
             <div class="card banner-2">Curso nível técnico:<br><br>Curso técnico de montagem e manutenção de computadores.<br>Finalizei 2014.<br><br>Técnico profissionalizante em tecnologia da informação, pela LumeCEP.<br>Finalizei em 2023<br><br>Curso Profissão Programador - Paulo Borges.<br>Em andamento.</div> 
@@ -40,22 +40,22 @@
         </div>
     </div>
 
-    <script>
+    <script> // Funcionalidade do botão voltar até o topo
         document.addEventListener("DOMContentLoaded", function() {
             // Obter o botão
-            const backToTopButton = document.getElementById("backToTop");
-    
+            const voltarTopoBotao = document.getElementById("voltaProTopo");
+
             // Mostrar o botão ao rolar 20px para baixo a partir do topo
             window.onscroll = function() {
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    backToTopButton.style.display = "block";
+                    voltarTopoBotao.style.display = "block";
                 } else {
-                    backToTopButton.style.display = "none";
+                    voltarTopoBotao.style.display = "none";
                 }
             };
-    
-            // Quando o usuário clicar no botão, rolar suavemente para o topo
-            backToTopButton.onclick = function() {
+
+            // Quando o usuário clicar no botão, volta para o topo
+            voltarTopoBotao.onclick = function() {
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'
@@ -63,9 +63,8 @@
             };
         });
     </script>
-    
-    
-    <button id="backToTop" title="Voltar ao topo">⬆</button>
+
+    <button id="voltaProTopo" title="Voltar ao topo">⬆</button>
 
     <footer>
         <div class="midias-sociais">

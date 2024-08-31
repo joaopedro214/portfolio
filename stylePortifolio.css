@@ -133,7 +133,7 @@ title{
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-#backToTop {
+#voltaProTopo {
     display: none; 
     position: fixed; 
     bottom: 20px; 
@@ -150,7 +150,7 @@ title{
     transition: opacity 0.3s; 
 }
 
-#backToTop:hover {
+#voltaProTopo:hover {
     background-color: #01c248; 
 }
 
