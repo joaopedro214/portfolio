@@ -156,8 +156,8 @@ title{
 
 
 
-/* Início do style da página Portifólio*/
-.titulo-portifolio{
+/* Início do style da página Portfólio*/
+.titulo-portfolio{
     color: #fff;
     font-family: 'Kdam Thmor Pro', sans-serif;
     display: flex;
@@ -166,7 +166,7 @@ title{
     letter-spacing: 1px;
 }
 
-.box-portifolio {
+.box-portfolio {
     margin-top: 50px;
     margin-bottom: 100px;
 }
