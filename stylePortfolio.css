@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
 }
 
 header{
@@ -37,7 +38,7 @@ body{
     justify-content: center;
 }
 
-.header-list li {
+.header-list li a{
     list-style: none;
     color: aliceblue;
     cursor: pointer;
@@ -49,7 +50,7 @@ body{
     letter-spacing: 1px;
 }
 
-.header-list li:hover{
+.header-list li a:hover{
     color: #01c248;
     transform: scale(0.95);
 }
@@ -85,7 +86,7 @@ footer {
     margin: 0;
 }
 
-.footer-list li{
+.footer-list li a{
     font-family: 'Kdam Thmor Pro', sans-serif;
     color: #fff;
     margin-bottom: 5px;
@@ -95,7 +96,7 @@ footer {
     transition: .5s;
 }
 
-.footer-list li:hover{
+.footer-list li a:hover{
     color: #01c248;
     transform: scale(0.95);
 }
@@ -138,7 +139,7 @@ title{
     position: fixed; 
     bottom: 20px; 
     right: 20px; 
-    z-index: 99;
+    z-sobre: 99;
     border: none; 
     outline: none; 
     background-color: #004239; 

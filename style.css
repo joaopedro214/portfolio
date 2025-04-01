@@ -4,6 +4,7 @@
     margin: 0; /* Zerei margem e padding padrão do navegador para não interferir no que eu queria implementar */
     padding: 0;
     text-decoration: none;
+    list-style: none;
 }
 
 header{
@@ -16,7 +17,7 @@ header{
 
 body{
     background-color: #006354;
-    justify-content: center;
+    
     height: 100vh;
 }
 
@@ -39,7 +40,7 @@ body{
        
 }
 
-.header-list li {
+.header-list li a{
     list-style: none; /* Removi os pontinhos padrão que decoram a lista */
     color: aliceblue;
     cursor: pointer;
@@ -51,7 +52,7 @@ body{
     letter-spacing: 1px;
 }
 
-.header-list li:hover{
+.header-list li a:hover{
     color: #01c248;
     transform: scale(0.95);
 }
@@ -88,7 +89,7 @@ footer {
     margin: 0;
 }
 
-.footer-list li{
+.footer-list li a{
     font-family: 'Kdam Thmor Pro', sans-serif;
     color: #fff;
     margin-bottom: 5px;
@@ -98,7 +99,7 @@ footer {
     transition: .5s;
 }
 
-.footer-list li:hover{
+.footer-list li a:hover{
     color: #01c248;
     transform: scale(0.95);
 }
@@ -159,9 +160,11 @@ title{
 
 /* Início do style da página Sobre mim */
 #pictureSobreMim{
-    width: 65%;
-    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 65%;
     margin: auto;
+    display: block;
     margin-top: 5%;
     margin-bottom: 10%;
     border-radius: 40px;
@@ -176,4 +179,11 @@ title{
     letter-spacing: 1px; /* Inseri um espaçamento entre as letras para melhorar a legibilidade */
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
+body {
+    font-size: 16px; /* Use unidades relativas como rem ou % */
+}
