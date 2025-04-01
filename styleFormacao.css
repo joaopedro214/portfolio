@@ -140,7 +140,7 @@ title{
     position: fixed; 
     bottom: 20px; 
     right: 20px; 
-    z-sobre: 99; /* Fica sobre outros elementos */
+    z-index: 99; /* Fica sobre outros elementos */
     border: none; 
     outline: none; /* Remove borda de foco */
     background-color: #004239; 

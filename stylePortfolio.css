@@ -139,7 +139,7 @@ title{
     position: fixed; 
     bottom: 20px; 
     right: 20px; 
-    z-sobre: 99;
+    z-index: 99;
     border: none; 
     outline: none; 
     background-color: #004239; 
