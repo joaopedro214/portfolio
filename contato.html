@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,21 +32,21 @@
         </nav>
     </header>
     
-    <form id="form-contato">
-        <h2>Entre em contato comigo</h2><br><br>
+    <form id="form-contato" action="https://formspree.io/f/movwpyjb" method="POST">
+        <h1>Entre em contato comigo</h1><br><br>
         
         <label for="nome">Nome</label>  
-        <input type="text" id="nome" class="form-control" placeholder="Nome" required/><br>
+        <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" required/><br>
     
     
         <label for="email">E-mail</label>
-        <input type="email" id="email" class="form-control" placeholder="E-mail" required/><br>
+        <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required/><br>
         
     
         <label for="mensagem">Mensagem</label>
-        <textarea type="text" id="mensagem" class="form-control" rows="06" cols="80" placeholder="Escreva sua mensagem..." required></textarea><br>
+        <textarea type="text" id="mensagem" name="mensagem" class="form-control" rows="06" cols="80" placeholder="Escreva sua mensagem..." required></textarea><br>
           
-        <button class="button" id="button" value="enviar">Enviar</button><br><br><br>
+        <button class="button" id="button" type="submit" value="enviar">Enviar</button><br><br><br>
     </form>
 
     <script src="./backToTop.js"> </script>
